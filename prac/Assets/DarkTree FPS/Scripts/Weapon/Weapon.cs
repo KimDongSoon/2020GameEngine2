@@ -435,6 +435,11 @@ namespace DarkTreeFPS
                 {
                     hit.transform.GetComponent<Rock>().Mining();
                 }
+
+                if (hit.collider.tag == "Grass")
+                {
+                    hit.transform.GetComponent<Grass>().Damage();
+                }
             }
         }
 

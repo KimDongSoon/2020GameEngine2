@@ -16,6 +16,7 @@ TagManager:
   - Flesh
   - Cover
   - Rock
+  - Grass
   layers:
   - Default
   - TransparentFX
