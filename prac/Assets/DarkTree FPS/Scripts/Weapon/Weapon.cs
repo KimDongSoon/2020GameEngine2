@@ -430,6 +430,11 @@ namespace DarkTreeFPS
                     hit.rigidbody.isKinematic = false;
                     hit.rigidbody.AddForceAtPosition(meleeRigidbodyHitForce * cam.transform.forward, hit.point);
                 }
+
+                if (hit.collider.tag == "Rock")
+                {
+                    hit.transform.GetComponent<Rock>().Mining();
+                }
             }
         }
 
@@ -472,6 +477,10 @@ namespace DarkTreeFPS
                 hit.rigidbody.AddForceAtPosition(rigidbodyHitForce * damageMin * cam.transform.forward, hit.point);
             }
 
+            if (hit.collider.tag == "Rock")
+            {
+                hit.transform.GetComponent<Rock>().Mining();
+            }
             /*
             if (hit.collider.GetComponent<NPC>())
                 hit.collider.GetComponent<NPC>().GetHit(Random.Range(damageMin, damageMax));
