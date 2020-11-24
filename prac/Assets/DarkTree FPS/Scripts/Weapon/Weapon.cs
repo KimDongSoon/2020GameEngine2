@@ -440,6 +440,11 @@ namespace DarkTreeFPS
                 {
                     hit.transform.GetComponent<Grass>().Damage();
                 }
+
+                if (hit.collider.tag == "Pig")
+                {
+                    hit.transform.GetComponent<Pig>().Damage(1, transform.position);
+                }
             }
         }
 
