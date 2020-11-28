@@ -445,6 +445,10 @@ namespace DarkTreeFPS
                 {
                     hit.transform.GetComponent<Pig>().Damage(1, transform.position);
                 }
+                if (hit.collider.tag == "Tree")
+                {
+                    hit.transform.GetComponent<TreeComponent>().Chop(hit.point, transform.eulerAngles.y);
+                }
             }
         }
 
