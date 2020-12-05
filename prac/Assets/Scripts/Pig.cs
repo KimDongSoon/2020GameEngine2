@@ -37,6 +37,9 @@ public class Pig : MonoBehaviour
     [SerializeField] protected AudioClip sound_pig_hurt;
     [SerializeField] protected AudioClip sound_pig_dead;
 
+    [SerializeField]
+    private GameObject go_meat_item_prefab; // 부서지면 나올 아이템
+
     // Start is called before the first frame update
     void Start()
     {
@@ -159,6 +162,13 @@ public class Pig : MonoBehaviour
         isWalking = false;
         isRunning = false;
         isDead = true;
+
+        this.gameObject.tag = "Untagged";
+
+        Destroy(this.gameObject, 2);
+
+        Instantiate(go_meat_item_prefab, this.transform.position, Quaternion.identity);
+
         anim.SetTrigger("Dead");
     }
 
