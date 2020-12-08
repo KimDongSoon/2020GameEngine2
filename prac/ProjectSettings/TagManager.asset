@@ -18,6 +18,7 @@ TagManager:
   - Rock
   - Grass
   - Pig
+  - Tree
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Terrain
   - 
   - 
   - 

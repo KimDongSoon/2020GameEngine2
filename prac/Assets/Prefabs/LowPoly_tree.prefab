@@ -305,8 +305,9 @@ GameObject:
   - component: {fileID: 1262912605698786059}
   - component: {fileID: 1262912605698786058}
   - component: {fileID: 1262912605698786052}
+  - component: {fileID: -6362677167274553523}
   m_Layer: 0
-  m_Name: normal_tree
+  m_Name: LowPoly_tree
   m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -478,6 +479,22 @@ MonoBehaviour:
   tree_chop_sound: {fileID: 8300000, guid: 865cb481e7bb676448dd311f0f3a756d, type: 3}
   tree_falldown_sound: {fileID: 8300000, guid: f2177ef346e8a9746bdec323d7c24d06, type: 3}
   tree_log_sound: {fileID: 8300000, guid: 1aa10175fe155bc4c8ecb5e0f3d9dbeb, type: 3}
+--- !u!54 &-6362677167274553523
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109845729259740875}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3156930075963974947
 GameObject:
   m_ObjectHideFlags: 0
