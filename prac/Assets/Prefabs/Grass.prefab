@@ -1292,6 +1292,9 @@ MonoBehaviour:
   hp: 2
   destroyTime: 5
   force: 1
+  count: 2
+  go_grass_item_prefab: {fileID: 5512921082453421055, guid: 91d969a55c3a18b4dab692bc060d88f7,
+    type: 3}
   go_hit_effect_prefab: {fileID: 7172645577277602379, guid: df467bbb3168ab748869f2d25f8796df,
     type: 3}
   audioSource: {fileID: 8023154978519438481}

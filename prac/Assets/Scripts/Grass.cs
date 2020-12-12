@@ -14,6 +14,13 @@ public class Grass : MonoBehaviour
     [SerializeField]
     private float force;
 
+
+    [SerializeField]
+    private int count;  // 나올 아이템 갯수
+
+    [SerializeField]
+    private GameObject go_grass_item_prefab; // 부서지면 나올 아이템
+
     // 타격 효과
     [SerializeField]
     private GameObject go_hit_effect_prefab;
@@ -64,5 +71,10 @@ public class Grass : MonoBehaviour
         }
 
         Destroy(this.gameObject, destroyTime);
+
+        for (int i = 0; i < count; i++)
+        {
+            Instantiate(go_grass_item_prefab, this.transform.position, Quaternion.identity);
+        }
     }
 }
