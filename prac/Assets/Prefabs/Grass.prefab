@@ -1149,7 +1149,7 @@ Transform:
   m_GameObject: {fileID: 8023154978519438482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 215.39, y: 99.97, z: 288.64}
-  m_LocalScale: {x: 1.393481, y: 1.393481, z: 1.393481}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8486987956264981118}
   - {fileID: 198643579955633618}
@@ -1290,7 +1290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 2
-  destroyTime: 5
+  destroyTime: 3
   force: 1
   count: 2
   go_grass_item_prefab: {fileID: 5512921082453421055, guid: 91d969a55c3a18b4dab692bc060d88f7,

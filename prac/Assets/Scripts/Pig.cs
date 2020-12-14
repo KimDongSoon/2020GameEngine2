@@ -165,7 +165,7 @@ public class Pig : MonoBehaviour
 
         this.gameObject.tag = "Untagged";
 
-        //Destroy(this.gameObject, 2);
+        Destroy(this.gameObject, 5);
 
         Instantiate(go_meat_item_prefab, this.transform.position, Quaternion.identity);
 
